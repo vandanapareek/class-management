@@ -13,33 +13,47 @@ Class Management is a service for managing students and teachers in a school or 
 
 ```bash
 git clone https://github.com/vandanapareek/class-management.git
+
+```
+3. Change to the project directory.
+
+```bash
+cd class-management
 ```
 
-3. Start the app using Docker Compose:
+4. Start the app using Docker Compose:
 
 ```bash
 docker-compose up --build
 ```
 
-4. The app will be running on http://localhost:8080.
+5. The app will be running on http://localhost:8080.
 
 
 ### Run the test-app using Docker
 
 1. Make sure you have Docker installed.
 
-2. Start the app and test-app using Docker Compose:
+2. Run the following command to start the test environment:
 
 ```bash
 docker-compose -f docker-compose.test.yml up  --build
 ```
 
-3. The test-app will be running on http://localhost:8081
+3. Wait for the containers to start and initialize.
 
-4. Run the unit tests for the test-app:
+4. The test-app will be running on http://localhost:8081
+
+5. Execute the tests using the following command:
 
 ```bash
-docker-compose -f docker-compose.test.yml exec api-test go test ./internal/test/...
+docker-compose -f docker-compose.test.yml exec api-test go test -v ./internal/test/...
+```
+
+6. You can stop and remove the test environment by running:
+
+```bash
+docker-compose -f docker-compose.test.yml down
 ```
 
 ## API Endpoints
