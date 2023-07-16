@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  test-db:
+  db:
     image: mysql:8.0.33
     container_name: db_test
     ports:
@@ -19,7 +19,7 @@ services:
     ports:
       - 8081:8080
     depends_on:
-      - test-db
+      - db
     env_file:
       - .env
     command: ["sh", "-c", "./wait-for-db.sh db 3306 && ./bin/api"]
