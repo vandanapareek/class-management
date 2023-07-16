@@ -5,8 +5,7 @@ Class Management is a service for managing students and teachers in a school or 
 
 ## Quickstart
 
-### Run the app using Docker
-
+### Configuration
 1. Make sure you have Docker installed.
 
 2. Clone this repos to your local machine
@@ -21,36 +20,40 @@ git clone https://github.com/vandanapareek/class-management.git
 cd class-management
 ```
 
-4. Start the app using Docker Compose:
+4. Create a copy of the .env.example file located in the project root and rename it to .env. 
+
+By default, the .env.example file provides the recommended default values for a local development environment using Docker. Feel free to modify these values according to your specific requirements.
+
+### Run the app using Docker
+
+1. Start the app using Docker Compose:
 
 ```bash
 docker-compose up --build
 ```
 
-5. The app will be running on http://localhost:8080.
+2. The app will be running on http://localhost:8080.
 
 
 ### Run the test-app using Docker
 
-1. Make sure you have Docker installed.
-
-2. Run the following command to start the test environment:
+1. Run the following command to start the test environment:
 
 ```bash
 docker-compose -f docker-compose.test.yml up  --build
 ```
 
-3. Wait for the containers to start and initialize.
+2. Wait for the containers to start and initialize.
 
-4. The test-app will be running on http://localhost:8081
+3. The test-app will be running on http://localhost:8081
 
-5. Execute the tests using the following command:
+4. Execute the tests using the following command:
 
 ```bash
 docker-compose -f docker-compose.test.yml exec api-test go test -v ./internal/test/...
 ```
 
-6. You can stop and remove the test environment by running:
+5. You can stop and remove the test environment by running:
 
 ```bash
 docker-compose -f docker-compose.test.yml down
