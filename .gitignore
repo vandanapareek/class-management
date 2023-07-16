@@ -29,7 +29,7 @@
 # Dependency directories
 /vendor/
 /go.sum
-/go.mod
+
 
 # IDE and editor specific files
 .idea/
