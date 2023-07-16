@@ -8,7 +8,7 @@ Class Management is a service for managing students and teachers in a school or 
 ### Configuration
 1. Make sure you have Docker installed.
 
-2. Clone this repos to your local machine
+2. Clone this repo to your local machine.
 
 ```bash
 git clone https://github.com/vandanapareek/class-management.git
