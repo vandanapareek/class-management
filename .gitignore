@@ -1,0 +1,45 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Compiled Binary files
+*.exe
+*.out
+
+# Log files
+*.log
+
+# Go binaries and executables
+/bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go test cache and coverage files
+*.test
+*.test.*
+*.prof
+
+# Go generated files
+/_generated/
+
+# Dependency directories
+/vendor/
+/go.sum
+/go.mod
+
+# IDE and editor specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore backup files created by text editors
+*~
