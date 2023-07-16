@@ -35,6 +35,9 @@ func (th teacherHandler) CommonStudentsOfTeachers(writer http.ResponseWriter, re
 		errors.JSONError(writer, err, http.StatusUnprocessableEntity)
 		return
 	}
+	if students == nil {
+		students = []string{}
+	}
 
 	response := dto.CommonStudentsResponse{
 		Students: students,
