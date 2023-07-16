@@ -2,9 +2,6 @@
 
 Class Management is a service for managing students and teachers in a school or educational institution. It provides functionality to create, retrieve, update, and delete students and teachers, as well as assign students to teachers.
 
-## Requirements
-Go 1.15 or higher
-MySQL database
 
 ## Quickstart
 
@@ -164,4 +161,4 @@ In the example above, studentagnes@gmail.com and studentmiche@gmail.com can rece
 ```
 
 ## Postman Collection
-[Postman Collection]()
+[Postman Collection](postman_collection.json)
