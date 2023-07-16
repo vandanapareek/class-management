@@ -19,8 +19,6 @@
 *.dylib
 
 # Go test cache and coverage files
-*.test
-*.test.*
 *.prof
 
 # Go generated files
